@@ -2,27 +2,27 @@
 // import obfuscator from 'postcss-obfuscator'
 const config = {
   plugins: [
-    'tailwindcss',
+    "tailwindcss",
     [
-      'postcss-obfuscator',
+      "postcss-obfuscator",
       {
-        enable: process.env.NODE_ENV === 'obfuscate', // Enable plugin
+        enable: process.env.NODE_ENV === "obfuscate", // Enable plugin
         length: 10, // Random  name length.
-        classMethod: 'random', // 'random', 'simple', 'none' obfuscation method for classes.
-        classPrefix: '', // ClassName prefix.
-        classSuffix: '', // ClassName suffix.
+        classMethod: "random", // 'random', 'simple', 'none' obfuscation method for classes.
+        classPrefix: "", // ClassName prefix.
+        classSuffix: "", // ClassName suffix.
         classIgnore: [], // Class to ignore from obfuscation.
         ids: false, //  Obfuscate #IdNames.
-        idMethod: 'random',
-        idPrefix: '', // idName Prefix.
-        idSuffix: '', // idName suffix.
+        idMethod: "random",
+        idPrefix: "", // idName Prefix.
+        idSuffix: "", // idName suffix.
         idIgnore: [], // Ids to ignore from obfuscation.
         indicatorStart: null, // Identify ids & classes by the preceding string.
         indicatorEnd: null, // Identify ids & classes by the following string.
-        jsonsPath: 'masked-classes', // Path and file name where to save obfuscation data.
-        srcPath: 'src', // Source of your files.
-        desPath: 'out', // Destination for obfuscated html/js/.. files.Be careful using the same directory as your src(you will lose your original files).
-        extensions: ['.html', '.tsx', '.ts', '.jsx'],
+        jsonsPath: "masked-classes", // Path and file name where to save obfuscation data.
+        srcPath: "src", // Source of your files.
+        desPath: "out", // Destination for obfuscated html/js/.. files.Be careful using the same directory as your src(you will lose your original files).
+        extensions: [".html", ".tsx", ".ts", ".jsx"],
         htmlExcludes: [], // Files and paths to exclude from html obfuscation replacement.
         cssExcludes: [], // Files and paths to exclude from css obfuscation.
         fresh: false,
@@ -34,6 +34,6 @@ const config = {
       },
     ],
   ],
-}
+};
 
-export default config
+export default config;

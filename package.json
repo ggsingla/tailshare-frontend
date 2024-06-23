@@ -9,7 +9,8 @@
     "lint": "next lint",
     "tailwindcss": "npx tailwindcss -i ./src/app/globals.css -o ./src/app/output.css",
     "postcss": "postcss src/**/*.css  --dir out/css",
-    "obfuscate": "yarn tailwindcss && yarn postcss"
+    "obfuscate": "yarn tailwindcss && yarn postcss",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "next": "14.2.4",
@@ -25,6 +26,7 @@
     "postcss": "^8",
     "postcss-cli": "^11.0.0",
     "postcss-obfuscator": "^1.6.1",
+    "prettier": "^3.3.2",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
